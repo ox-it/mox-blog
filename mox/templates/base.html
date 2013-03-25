@@ -16,28 +16,8 @@
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
     <link href="{{ SITEURL }}/theme/css/normalize.css" rel="stylesheet" />
     <link href="{{ SITEURL }}/theme/css/app.css" rel="stylesheet" />
-    <script src="{{ SITEURL }}/theme/js/vendor/jquery.js"></script>
-    <script src="{{ SITEURL }}/theme/js/foundation/foundation.js"></script>
-    <script src="{{ SITEURL }}/theme/js/foundation/foundation.topbar.js"></script>
   </head>
   <body>
-        <nav class="top-bar">
-          <ul class="title-area">
-            <li class="name"><h1><a href="/">Mobile Oxford</a></h1></li>
-            <li class="toggle-topbar menu-icon">
-            <a href="#"><span>Menu</span></a>
-            </li>
-          </ul>
-          <section class="top-bar-section">
-            <ul class="right">
-              {% for p in pages %}
-              {# Why does this need to be absolute? #}
-              <li class="divider"></li>
-              <li><a href="/{{ p.url }}">{{ p.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </section>
-        </nav>
     <div class="row">
       <div class="large-12 columns">
         <h1><a href="{{ SITEURL }}">Mobile Oxford</a> <small>indistinctively different</small></h1>

@@ -18,19 +18,25 @@
 <!-- Sidebar -->
 <aside class="large-3 columns">
 
-<h5>Categories</h5>
-<ul class="side-nav">
-  {% for category, articles in categories %}
-  <li><a href="#">{{ category }}</a></li>
-  {% endfor %}
-</ul>
-
 <div class="panel">
   <h5>Featured</h5>
   <p>Message telling people to check out the service manual or some other featured content</p>
   <a href="pages/service-manual.html">Read More →</a>
 </div>
 
+<h5>Pages</h5>
+<ul class="side-nav">
+  {% for page in pages %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h5>Categories</h5>
+<ul class="side-nav">
+  {% for category, articles in categories %}
+  <li><a href="{{ category.url }}">{{ category }}</a></li>
+  {% endfor %}
+</ul>
 </aside>
 <!-- End Sidebar -->
 
