@@ -24,3 +24,6 @@ output/
 
 # Sass
 .sass-cache/
+
+# Generated CSS
+mox/static/css/
