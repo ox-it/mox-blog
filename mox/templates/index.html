@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Main Blog Content -->
+<div class="large-9 columns" role="content">
+  <!-- Show last 10 posts here -->
+  {% for article in articles_page.object_list %}
+  <article>
+  <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+  <h6>{{ article.author.name }}</h6>
+  <section class="entry">{{ article.content }}</section>
+  <p class="date"><span>{{ article.locale_date }}</span></p>
+  </article>
+  {% endfor %}
+</div>
+<!-- End Main Content -->
+
+
+<!-- Sidebar -->
+<aside class="large-3 columns">
+
+<h5>Categories</h5>
+<ul class="side-nav">
+  {% for category, articles in categories %}
+  <li><a href="#">{{ category }}</a></li>
+  {% endfor %}
+</ul>
+
+<div class="panel">
+  <h5>Featured</h5>
+  <p>Message telling people to check out the service manual or some other featured content</p>
+  <a href="pages/service-manual.html">Read More →</a>
+</div>
+
+</aside>
+<!-- End Sidebar -->
+
+{% endblock content %}
