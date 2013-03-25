@@ -21,3 +21,6 @@ pip-log.txt
 
 # Pelican output
 output/
+
+# Sass
+.sass-cache/
