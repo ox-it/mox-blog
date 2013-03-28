@@ -20,7 +20,8 @@ pip-log.txt
 *.pid
 
 # Pelican output
-output/
+output/*
+!output/.gitkeep
 
 # Sass
 .sass-cache/
