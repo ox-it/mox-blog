@@ -5,5 +5,5 @@ Simple Pelican blog for the Mobile Oxford team.
 
 ## Local setup
 
-1. `pip install -r requirements.txt`
-2. `make html`
+1. Setup dependencies (you probably want to be in a virtualenv first) `pip install -r requirements.txt`
+2. Generate HTML from the articles `make html`
