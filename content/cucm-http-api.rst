@@ -6,11 +6,31 @@ Building lightweight HTTP services in Java
 :category: Java
 :slug: cucm-http-api
 :author: Martin Filliau
+:email: martin.filliau@it.ox.ac.uk
 :summary: How we decided to build an intermediate layer of services in Java to be consumed by a Python application
 
+One of our project requires access to a SOAP Web Service called `Cisco "CUCM" Administrative XML <http://developer.cisco.com/web/axl/docs>`_, used to manage Cisco IP phones. Our project being a Django (Python) application, we naturally began to handle connections to the web service directly in our project using the Python library `Suds <https://fedorahosted.org/suds/>`_.
 
+We unfortunately encountered quite a lot of problems due to the complexity of the web service composed of a lot of complex types, and we reached a point where suds was not good enough (except by starting to use a customised version of suds such as what is discussed `here <https://fedorahosted.org/suds/ticket/342>`_). Having difficulties to find an alternative in Python, we began to look at alternatives on different platforms.
 
-`Dropwizard <http://dropwizard.codahale.com/>`_
-`CUCM HTTP API <https://github.com/ox-it/cucm-http-api>`_
-`Cisco Administrative XML documentation <http://developer.cisco.com/web/axl/docs>`_
-`Suds <https://fedorahosted.org/suds/>`_
+-------------------------
+Java coming to our rescue
+-------------------------
+
+The Java platform is well-known for working with SOAP web services, and the tooling seemed to be appropriate - in addition to be free. Generating an usable client to consume the SOAP web service is very easy (using `wsimport <http://docs.oracle.com/javase/6/docs/technotes/tools/share/wsimport.html>`_) but the main question was: *how do we expose the web service in a better way?*
+
+Here comes `Dropwizard <http://dropwizard.codahale.com/>`_, a Java framework to develop HTTP services, quite popular (originally developed by `Yammer <http://www.yammer.com>`_) and very easy to learn. It is very pragmatic and contains everything needed out-of-the box (configuration, logging, deployment) to build HTTP/JSON services.
+
+After having spent days trying to access the web service in Python, we got an initial working version in a matter of hours. We now expose entities and methods doing exactly what we need, exposing just what is needed, and ready to be consumed by our front-end Django application.
+
+The component is really easy to package and deploy, Dropwizard uses a `shaded ("fat") JAR <http://maven.apache.org/plugins/maven-shade-plugin/>`_ containing `Jetty web server <http://www.eclipse.org/jetty/>`_ which can be run directly.
+
+----------------
+A good tradeoff?
+----------------
+
+Although it doesn't seem ideal at first sight, introducing this middleware seems to be a good tradeoff, also allowing us to have a better separation of concerns and move easily part of the service on a different machine if need be. Having a separated component also means that we can open-source it to be potentially reused.
+
+We are quite happy with the result as we have been able to develop quite rapidly an efficient service, you can see the result of our work on `GitHub <https://github.com/ox-it/cucm-http-api>`_, this project is actively developed and may change in the near future.
+
+**PS**: Following the J2EE world for a few years now, Dropwizard is an interesting trend, see this article for more on that topic: "`J2EE is dead <http://java.dzone.com/articles/j2ee-dead-long-live-javascript>`_".
