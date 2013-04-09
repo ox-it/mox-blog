@@ -25,3 +25,6 @@ CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
 PLUGINS = ['pelican.plugins.gravatar',]
+
+SITEURL = 'http://blog.m.ox.ac.uk'
+FEED_DOMAIN = SITEURL
