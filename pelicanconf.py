@@ -24,5 +24,7 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
+PLUGINS = ['pelican_gist',]
+
 SITEURL = 'http://blog.m.ox.ac.uk'
 FEED_DOMAIN = SITEURL
