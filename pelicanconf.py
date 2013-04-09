@@ -23,3 +23,5 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+
+PLUGINS = ['pelican.plugins.gravatar',]

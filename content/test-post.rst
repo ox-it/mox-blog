@@ -7,6 +7,7 @@ My super title
 :slug: my-super-post
 :author: Dave King
 :summary: Short version for index and feeds
+:email: tim.fernando@oucs.ox.ac.uk
 
 
 Here's a blog post! This will be turned into :abbr:`HTML (HyperText Markup Language)`.
