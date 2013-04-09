@@ -4,6 +4,7 @@
   <article>
     <h3>{{ article.title }}</h3>
     <h6>{{ article.author.name }}</h6>
+    <img src="{{ article.author_gravatar }}" />
     <section class="entry">{{ article.content }}</section>
     <p class="date"><span>{{ article.locale_date }}</span></p>
   </article>
