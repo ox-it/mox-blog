@@ -30,3 +30,5 @@ Various options are available and we made the choice of `HAL (Hypertext Applicat
 
 You can visit `api.m.ox.ac.uk <http://api.m.ox.ac.uk>`_ to have an overview of the API using the `HAL browser <http://github.com/mikekelly/hal-browser>`_, a developer friendly browser allowing to follow the links in the
 API (in the line of the Google API Explorer).
+
+`Hypermedia APIs with mobile clients <http://www.jayway.com/2013/04/08/hypermedia-apis-with-mobile-clients/>`_
