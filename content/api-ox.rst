@@ -4,12 +4,13 @@ Building web services for the new Mobile Oxford
 :date: 2013-04-03 10:20
 :slug: mobile-oxford-services
 :author: Martin Filliau
-:status: draft
 :summary: How we decided to build a generic API ready to support a various range of clients around the University
 
 We began to build an entirely new version of Mobile Oxford to replace the old one which had some conceptual issues (large code base mostly untested, various performance problems...) and wasn't adapted anymore to the market we are targeting (will be described in more details in a different blog post).
 
 The new architecture is centered around a JavaScript client and an API providing data to the client. The API could be considered as a "search" solution mostly. We decided to build an API over HTTP (RESTful-ish), serving JSON as our primary representation as it serves our immediate needs.
+
+We need to expose resources such as "Contact search", "Library (books) search", "Places search", "Courses search" and some other services already provided by the current `Mobile Oxford <http://m.ox.ac.uk>`_.
 
 Towards a generic API
 ---------------------
