@@ -18,6 +18,8 @@ SSH_TARGET_DIR=/var/www
 
 DROPBOX_DIR=~/Dropbox/Public/
 
+CONTENT_REMOTE=blog@blog.m.ox.ac.uk
+
 help:
 	@echo 'Makefile for a pelican Web site                                        '
 	@echo '                                                                       '
@@ -74,3 +76,9 @@ github: publish
 	git push origin gh-pages
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
+
+sync_content:
+	rsync -z $(CONTENT_REMOTE):/srv/blog/www/content/documents/* content/documents/
+	rsync -z $(CONTENT_REMOTE):/srv/blog/www/content/images/* content/images/
+	rsync -z content/documents/* $(CONTENT_REMOTE):/srv/blog/www/content/documents
+	rsync -z content/images/* $(CONTENT_REMOTE):/srv/blog/www/content/images
