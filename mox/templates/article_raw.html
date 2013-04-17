@@ -4,10 +4,10 @@
   {% if article.author_gravatar %}<img src="{{ article.author_gravatar }}" />{% endif %}
   {% if article.tags %}
   <p class="tags">
-{% for tag, articles in tags %}
-  {{ tag }}{% if not loop.last %},{% endif %}
-{% endfor %}
-</p>
+  {% for tag, articles in tags %}
+    {{ tag }}{% if not loop.last %},{% endif %}
+  {% endfor %}
+  </p>
 {% endif %}
 <p class="date"><span>{{ article.locale_date }}</span></p>
 <p class="comments"><a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a></p>

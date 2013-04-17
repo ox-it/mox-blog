@@ -144,6 +144,8 @@ article {
   @include grid-row();
   border-bottom: 1px solid #ccc;
   margin-bottom: 2em;
+  // TODO Appears not to be working
+  &:last-child { border: 0 }
   // Header
   //
   // Includes title and metadata about the article
@@ -168,5 +170,18 @@ article {
   // Full width section, but content aligned with the article
   section.comments {
     @include grid-column(9, true, false, 3);
+  }
+}
+
+// Pagination section
+//
+// A section which contains links forward/backward through time
+// allowing pagination through multiple blog articles
+section#pagination {
+  @include grid-row();
+  text-align: center;
+  padding-bottom: 2em;
+  a {
+    padding: 20px;
   }
 }
