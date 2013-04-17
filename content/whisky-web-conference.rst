@@ -20,6 +20,8 @@ They, of course, need their API to be easily usable, they have built an "API for
 This can be seen as a *light* version of `WSDL <http://en.wikipedia.org/wiki/Web_Services_Description_Language>`_ (generally used to descripe SOAP web services).
 This "discovery document" is used to generate client libraries per language, which allow more advanced uses in addition to plain HTTP calls such as `RPC Batch <https://developers.google.com/api-client-library/javascript/features/rpcbatch>`_ (sending multiple requests at once), `CloudEndpoint <https://developers.google.com/appengine/docs/java/endpoints/overview>`_ (generating APIs) and `Protobuffers <https://developers.google.com/protocol-buffers/docs/overview>`_.
 
+We have similar concerns about the discovery of our API
+
 Bringing the Open Web and APIs to mobile devices with Firefox OS
 ----------------------------------------------------------------
 
@@ -27,3 +29,12 @@ Robert Nyman from Mozilla did an introduction of Firefox OS and the possibilitie
 
 It would be interesting to (try to) deploy the new Mobile Oxford on Firefox OS (with our current setup it should just be a matter of adding one manifest file to describe the application).
 
+Identity, responsiveness and the future of the web
+--------------------------------------------------
+
+Ade Oshineye, developer advocate for Google Plus
+
+Scaling applications with RabbitMQ
+----------------------------------
+
+`RabbitMQ Simulator <https://github.com/RabbitMQSimulator/RabbitMQSimulator>`_
