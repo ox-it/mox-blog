@@ -68,10 +68,12 @@ nav {
   div#logo {
     @include grid-column(3);
     h1 {
-      font-size: 25px;
-    }
-    em {
-      font-size: 15px;
+      font-size: emCalc(25px);
+      line-height: emCalc(28px);
+      small {
+        font-size: emCalc(13px);
+        display: block;
+      }
     }
   }
   ul {
