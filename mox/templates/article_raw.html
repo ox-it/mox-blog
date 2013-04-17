@@ -10,6 +10,11 @@
     </p>
     <p class="date"><span>{{ article.locale_date }}</span></p>
 	</header>
-	<section class="entry">{{ article.content }}</section>
+	<section class="entry">
+		{% if article.summary %}
+		<section class="summary">{{ article.summary }}</section>
+		{% endif %}
+		{{ article.content }}
+	</section>
 	{% include 'article_comments.html' %}
 </article>
