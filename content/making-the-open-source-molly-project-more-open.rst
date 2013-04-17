@@ -5,10 +5,6 @@ Making the open source Molly Project more 'open'
 Recently we've been thinking hard about how to develop the Molly project
 into a true community open source project. 
 
-.. raw:: html
-
-   </p>
-
 Moving away from SourceForge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

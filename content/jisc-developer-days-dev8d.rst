@@ -1,46 +1,7 @@
 JISC Developer Days : dev8d
 ###########################
 :date: 2011-02-16 16:04
-
-.. raw:: html
-
-   <div class="p_embed p_image_embed">
-
-.. raw:: html
-
-   </p>
-
-|P70|
-
-|P72|
-
-|P74|
-
-.. raw:: html
-
-   <div class="p_see_full_gallery">
-
-`See the full gallery on Posterous`_
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   <p>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
+:author: Chris Stephens
 
 dev8d came along before I was quite ready for it. I'd glanced quickly at
 the program, but only noticed a bunch of unfamiliar acronyms. I had a
@@ -98,30 +59,3 @@ which gave me flash-backs to my first stumbling forays into XML After
 the talks came our first workshop session and I'm here now writing this
 entry while I should probably be paying attention. I hope nobody asks me
 anything more complicated than "which way to the coffee?"
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   </p>
-
-`Permalink`_
-
-\| `Leave a comment  »`_
-
-.. raw:: html
-
-   </p>
-
-.. _See the full gallery on Posterous: http://mobileoxfordtech.posterous.com/jisc-developer-days-dev8d
-.. _Permalink: http://mobileoxfordtech.posterous.com/jisc-developer-days-dev8d
-.. _Leave a comment  »: http://mobileoxfordtech.posterous.com/jisc-developer-days-dev8d#comment
-
-.. |P70| image:: http://getfile4.posterous.com/getfile/files.posterous.com/mobileoxfordtech/gvEnDJFfmhfwuxrxspmBflupJudeIwipbkfulgrloudzIoIzjBwgnkrcIvio/p70.jpg.scaled595.jpg
-   :target: http://getfile4.posterous.com/getfile/files.posterous.com/mobileoxfordtech/gvEnDJFfmhfwuxrxspmBflupJudeIwipbkfulgrloudzIoIzjBwgnkrcIvio/p70.jpg.scaled1000.jpg
-.. |P72| image:: http://getfile3.posterous.com/getfile/files.posterous.com/mobileoxfordtech/dCcgdlEHvqpaHugsCawachgfghxCwarkJDmGwvuErHzrtIeFGkpCIsEvaylJ/p72.jpg.scaled595.jpg
-   :target: http://getfile3.posterous.com/getfile/files.posterous.com/mobileoxfordtech/dCcgdlEHvqpaHugsCawachgfghxCwarkJDmGwvuErHzrtIeFGkpCIsEvaylJ/p72.jpg.scaled1000.jpg
-.. |P74| image:: http://getfile4.posterous.com/getfile/files.posterous.com/mobileoxfordtech/atxryDccieGFvooHqylayilxAHccmbcElpkhtyEJDthxxcbqqHDebeExzzos/p74.jpg.scaled595.jpg
-   :target: http://getfile9.posterous.com/getfile/files.posterous.com/mobileoxfordtech/atxryDccieGFvooHqylayilxAHccmbcElpkhtyEJDthxxcbqqHDebeExzzos/p74.jpg.scaled1000.jpg
