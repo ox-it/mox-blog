@@ -18,7 +18,7 @@ SSH_TARGET_DIR=/var/www
 
 DROPBOX_DIR=~/Dropbox/Public/
 
-CONTENT_REMOTE=blog@blog.m.ox.ac.uk	# can be overriden in the command line, e.g. CONTENT_REMOTE=blog@33.33.33.10
+CONTENT_REMOTE=blog@blog.m.ox.ac.uk
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
@@ -78,7 +78,7 @@ github: publish
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
 
 sync_content:
-	rsync -z content/documents/* $(CONTENT_REMOTE):/srv/blog/www/content/documents
-	rsync -z content/images/* $(CONTENT_REMOTE):/srv/blog/www/content/images
 	rsync -z $(CONTENT_REMOTE):/srv/blog/www/content/documents/* content/documents/
 	rsync -z $(CONTENT_REMOTE):/srv/blog/www/content/images/* content/images/
+	rsync -z content/documents/* $(CONTENT_REMOTE):/srv/blog/www/content/documents
+	rsync -z content/images/* $(CONTENT_REMOTE):/srv/blog/www/content/images
