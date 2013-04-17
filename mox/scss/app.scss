@@ -44,8 +44,11 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
 
+$heading-font-family: 'Roboto Condensed', sans-serif;
+$body-font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $heading-font-family;
 }
 
 // Text rendering
@@ -53,6 +56,13 @@ h1, h2, h3, h4, h5 {
 // This has performance impacts on some browsers
 // but should be neglibible
 * {text-rendering: optimizeLegibility;}
+
+// Images
+//
+// Styling for images
+img {
+  margin-bottom: 1em;
+}
 
 // Navigation
 //
@@ -77,14 +87,20 @@ nav {
     }
   }
   ul {
-    list-style: none;
     @include grid-column(9);
+    list-style: none;
+    margin-top: 1em;
+    font-family: $heading-font-family;
     li {
-      display: inline-block;
-      line-height: 17px;
       @include grid-column(3);
+      display: inline-block;
+      font-size: emCalc(20px);
+      line-height: emCalc(18px);
+      padding-left: 0;
       em {
         display: block;
+        font-style: normal;
+        font-size: emCalc(13px);
       }
     }
   }
