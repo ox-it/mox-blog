@@ -3,7 +3,7 @@
 {% for article in articles_page.object_list %}
 <article>
   <header role="article-info">
-    <h3>{{ article.title }}</h3>
+    <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
     <h6>{{ article.author.name }}</h6>
     <p class="tags">
   {% for tag, articles in tags %}

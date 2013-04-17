@@ -42,6 +42,12 @@
   "foundation/components/tooltips",
   "foundation/components/dropdown";
 
+// Text rendering
+//
+// This has performance impacts on some browsers
+// but should be neglibible
+* {text-rendering: optimizeLegibility;}
+
 // Navigation
 //
 // nav bar including a logo div and a bunch of links
@@ -93,6 +99,7 @@ footer  {
 //
 // A blog article
 article {
+  @include grid-column(12);
   header {
     @include grid-column(3);
   }
