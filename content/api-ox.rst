@@ -51,5 +51,11 @@ You can visit `api.m.ox.ac.uk <http://api.m.ox.ac.uk>`_ to have an overview of t
 `HAL browser <http://github.com/mikekelly/hal-browser>`_, a developer friendly browser to view resources and follow
 links (similar to the `Google API Explorer <https://developers.google.com/apis-explorer/>`_).
 
+For example, our API provides Points of Interest (POI) around Oxford, some of them having *real-time* information,
+a client can follow the link ``rti`` to discover an associated resource. Alternatively, you can get the parent POI
+by following the link ``parent``.
+
+[gist:id=5406037]
+
 Our code is open-sourced on GitHub as "`Moxie <https://github.com/ox-it/moxie>`_", this is a work in progress and we
 will publish more technical details in a different blog post soon.
