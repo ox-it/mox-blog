@@ -26,7 +26,7 @@ We knew that the current version of Mobile Oxford was already consumed by other 
 With that information in mind, we decided that our API should be generic enough to be consumed by other applications as well, Mobile Oxford being the first consumer for it.
 It makes sense for us to build reusable services as we have the feeling that some other teams might have the same needs than us.
 
-This is of course raising some issues as well, as we have to constantly think about having to make a clear separation between data and our client (versus having a "private" API for our client and a public one, but we do not feel the need to have a separation, at least for now).
+This of course raises some issues, we now have to carefully consider the clear separation between data and our client (versus having a "private" API tailored for our client and a public one, which we currently do not feel the need to have).
 
 Providing links in our API
 --------------------------
