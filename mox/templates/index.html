@@ -1,19 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 {% for article in articles_page.object_list %}
-<article>
-  <header role="article-info">
-    <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-    <h6>{{ article.author.name }}</h6>
-    <p class="tags">
-      {% for tag, articles in tags %}
-      {{ tag }}{% if not loop.last %},{% endif %}
-      {% endfor %}
-    </p>
-    <p class="date"><span>{{ article.locale_date }}</span></p>
-  </header>
-<section class="entry">{{ article.content }}</section>
-</article>
+  {% include 'article_raw.html' %}
 {% endfor %}
 {% include 'pagination.html' %}
 {% endblock content %}

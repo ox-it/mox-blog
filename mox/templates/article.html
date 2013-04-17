@@ -1,31 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<article>
-	<header role="article-info">
-  	<h3>{{ article.title }}</h3>
-  	<h6>{{ article.author.name }}</h6>
-  	<p class="tags">
-	{% for tag, articles in tags %}
-	{{ tag }}{% if not loop.last %},{% endif %}
-	{% endfor %}
-    </p>
-    <p class="date"><span>{{ article.locale_date }}</span></p>
-	</header>
-	<section class="entry">{{ article.content }}</section>
-	{% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
-	  <div class="comments">
-	    <h2>Comments !</h2>
-	    <div id="disqus_thread"></div>
-	    <script type="text/javascript">
-	      var disqus_identifier = "{{ article.url }}";
-	      var disqus_url = "{{ SITEURL }}/{{ article.url }}";
-	      (function() {
-	      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	      dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-	      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	      })();
-	    </script>
-	  </div>
-	{% endif %}
-</article>
+  {% include 'article_raw.html' %}
 {% endblock content %}
+
