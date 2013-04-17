@@ -12,8 +12,7 @@ DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 THEME = 'mox'
 
-DEFAULT_PAGINATION = False
-
+DEFAULT_PAGINATION = 10
 
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
