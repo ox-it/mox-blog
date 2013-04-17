@@ -24,7 +24,12 @@ PAGE_SAVE_AS = 'pages/{slug}/index.html'
 CATEGORY_URL = 'category/{slug}/'
 CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
-PLUGINS = ['pelican.plugins.gravatar',]
+PLUGINS = ['pelican.plugins.gravatar', 'pelican_gist']
 
 SITEURL = 'http://blog.m.ox.ac.uk'
 FEED_DOMAIN = SITEURL
+
+SITEURL = 'http://blog.m.ox.ac.uk'
+FEED_DOMAIN = SITEURL
+
+DISQUS_SITENAME = 'mobileoxford'
