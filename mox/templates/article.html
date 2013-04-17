@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="large-12 columns">
-  <article>
-    <h3>{{ article.title }}</h3>
-    <h6>{{ article.author.name }}</h6>
-    <section class="entry">{{ article.content }}</section>
+<article>
+	<header role="article-info">
+  	<h3>{{ article.title }}</h3>
+  	<h6>{{ article.author.name }}</h6>
+  	<p class="tags">
+	{% for tag, articles in tags %}
+	{{ tag }}{% if not loop.last %},{% endif %}
+	{% endfor %}
+    </p>
     <p class="date"><span>{{ article.locale_date }}</span></p>
-  </article>
-</div>
+	</header>
+<section class="entry">{{ article.content }}</section>
+</article>
 {% endblock content %}

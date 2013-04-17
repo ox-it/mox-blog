@@ -87,3 +87,16 @@ footer  {
   padding-top: 10px;
   text-align: center;
 }
+
+
+// Article
+//
+// A blog article
+article {
+  header {
+    @include grid-column(3);
+  }
+  section {
+    @include grid-column(9);
+  }
+}
