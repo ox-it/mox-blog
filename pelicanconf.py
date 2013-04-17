@@ -9,7 +9,7 @@ TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
 
-DEFAULT_DATE_FORMAT = '%d/%m/%Y'
+DEFAULT_DATE_FORMAT = '%B %d, %Y'
 THEME = 'mox'
 
 DEFAULT_PAGINATION = 10
