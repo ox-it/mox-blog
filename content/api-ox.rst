@@ -49,7 +49,7 @@ and not coupled to JSON.
 
 You can visit `api.m.ox.ac.uk <http://api.m.ox.ac.uk>`_ to have an overview of the API using the
 `HAL browser <http://github.com/mikekelly/hal-browser>`_, a developer friendly browser to view resources and follow
-links (in the line of the `Google API Explorer <https://developers.google.com/apis-explorer/>`_).
+links (similar to the `Google API Explorer <https://developers.google.com/apis-explorer/>`_).
 
 Our code is open-sourced on GitHub as "`Moxie <https://github.com/ox-it/moxie>`_", this is a work in progress and we
 will publish more technical details in a different blog post soon.
