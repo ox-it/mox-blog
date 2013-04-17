@@ -11,6 +11,9 @@ Building lightweight HTTP services in Java
 
 One of our projects requires access to a SOAP Web Service called `Cisco "CUCM" Administrative XML <http://developer.cisco.com/web/axl/docs>`_, used to manage Cisco IP phones. Our project being a Django (Python) application, we used the de facto SOAP library for Python called `Suds <https://fedorahosted.org/suds/>`_.
 
+.. image:: |filename|/images/cucm-phone.jpg
+   :align: center 
+
 Unfortunately, we encountered many problems as the CUCM service is composed of a lot of custom types, and we reached a point where suds was not good enough (except by starting to use a customised version of suds such as what is discussed `here <https://fedorahosted.org/suds/ticket/342>`_). Having difficulties to find an alternative in Python, we began to look at alternatives on different platforms.
 
 -------------------------
