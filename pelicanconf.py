@@ -28,3 +28,5 @@ PLUGINS = ['pelican_gist',]
 
 SITEURL = 'http://blog.m.ox.ac.uk'
 FEED_DOMAIN = SITEURL
+
+DISQUS_SITENAME = 'mobileoxford'
