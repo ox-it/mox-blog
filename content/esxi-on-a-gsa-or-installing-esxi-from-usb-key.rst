@@ -28,5 +28,3 @@ And it's as simple as that!
 
 .. _alter the syslinux.cfg file and add a ks.cfg as detailed in this blog post: http://benincosa.org/blog/?p=171
 .. _this blog post describes how to solve it: http://www.ivobeerens.nl/?p=699
-.. _Permalink: http://mobileoxfordtech.posterous.com/esxi-on-a-gsa-or-installing-esxi-from-usb-key
-.. _Leave a comment  »: http://mobileoxfordtech.posterous.com/esxi-on-a-gsa-or-installing-esxi-from-usb-key#comment
