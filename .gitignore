@@ -28,3 +28,6 @@ output/*
 
 # Generated CSS
 mox/static/css/
+
+content/documents/*
+content/images/*
