@@ -41,3 +41,49 @@
   "foundation/components/thumbs",
   "foundation/components/tooltips",
   "foundation/components/dropdown";
+
+// Navigation
+//
+// nav bar including a logo div and a bunch of links
+// horizontally spaced
+nav {
+  @include grid-row();
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  div#logo {
+    @include grid-column(3);
+    h1 {
+      font-size: 25px;
+    }
+    em {
+      font-size: 15px;
+    }
+  }
+  ul {
+    list-style: none;
+    @include grid-column(9);
+    li {
+      display: inline-block;
+      line-height: 17px;
+      @include grid-column(3);
+      em {
+        display: block;
+      }
+    }
+  }
+}
+
+// Footer
+//
+// A full width footer for style, containing divs with content
+footer  {
+  background-color: #feffff;
+  @include grid-row();
+  min-height: 200px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: center;
+}
