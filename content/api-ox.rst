@@ -28,8 +28,8 @@ It makes sense for us to build reusable services as we have the feeling that som
 
 This is of course raising some issues as well, as we have to constantly think about having to make a clear separation between data and our client (versus having a "private" API for our client and a public one, but we do not feel the need to have a separation, at least for now).
 
-Hypermedia API
---------------
+Providing links in our API
+--------------------------
 
 As we want our API to be easily usable and understandable, we knew that our API had to be an hypermedia API embedding links between representations.
 Various options are available (JSON-LD, OData, Collection+JSON...) and we made the choice of `HAL (Hypertext Application Language) <http://stateless.co/hal_specification.html>`_ because it is very clear, easy to understand and not coupled to JSON.
