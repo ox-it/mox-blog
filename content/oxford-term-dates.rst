@@ -4,7 +4,7 @@ Oxford term dates
 :author: Chris Northwood
 
 Just a quick update here from the offices of Mobile Oxford - but if
-you're a member of Oxford University and develop websites in Python,
+you're a member of University of Oxford and develop websites in Python,
 you'll undoubtedly find it more useful from time-to-time to represent
 dates in Oxford format - Term, Week, Year, as opposed to a typical
 calendar date. We've had the same issue, and developed some code to
