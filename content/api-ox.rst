@@ -34,6 +34,7 @@ Hypermedia API
 As we want our API to be easily usable and understandable, we knew that our API had to be an hypermedia API embedding links between representations.
 Various options are available (JSON-LD, OData, Collection+JSON...) and we made the choice of `HAL (Hypertext Application Language) <http://stateless.co/hal_specification.html>`_ because it is very clear, easy to understand and not coupled to JSON.
 
-You can visit `api.m.ox.ac.uk <http://api.m.ox.ac.uk>`_ to have an overview of the API using the `HAL browser <http://github.com/mikekelly/hal-browser>`_, a developer friendly browser allowing to follow the links in the API (in the line of the `Google API Explorer <https://developers.google.com/apis-explorer/>`_).
+You can visit `api.m.ox.ac.uk <http://api.m.ox.ac.uk>`_ to have an overview of the API using the `HAL browser <http://github.com/mikekelly/hal-browser>`_,
+a developer friendly browser to view resources and follow links (in the line of the `Google API Explorer <https://developers.google.com/apis-explorer/>`_).
 
 Our code is open-sourced on GitHub as "`Moxie <https://github.com/ox-it/moxie>`_", this is a work in progress and we will publish more technical details in a different blog post soon.
