@@ -31,8 +31,8 @@ This is of course raising some issues as well, as we have to constantly think ab
 Providing links in our API
 --------------------------
 
-As we want our API to be easily usable and understandable, we knew that our API had to be an hypermedia API embedding links between representations.
-Various options are available (JSON-LD, OData, Collection+JSON...) and we made the choice of `HAL (Hypertext Application Language) <http://stateless.co/hal_specification.html>`_ because it is very clear, easy to understand and not coupled to JSON.
+As we want our API to be easily usable and understandable, we investigated options to embed qualified links between resources in our API (hypermedia API).
+Various options are available (JSON-LD, OData, Collection+JSON...) and we made the choice of `HAL (Hypertext Application Language) <http://stateless.co/hal_specification.html>`_ because it makes a clear separation between properties of your resources and metadata (links) by using a standard syntax, easy to understand and not coupled to JSON.
 
 You can visit `api.m.ox.ac.uk <http://api.m.ox.ac.uk>`_ to have an overview of the API using the `HAL browser <http://github.com/mikekelly/hal-browser>`_,
 a developer friendly browser to view resources and follow links (in the line of the `Google API Explorer <https://developers.google.com/apis-explorer/>`_).
