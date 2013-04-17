@@ -74,3 +74,9 @@ github: publish
 	git push origin gh-pages
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
+
+sync_content:
+	rsync -z content/documents/* blog@33.33.33.10:/srv/blog/www/content/documents
+	rsync -z content/images/* blog@33.33.33.10:/srv/blog/www/content/images
+	rsync -z blog@33.33.33.10:/srv/blog/www/content/documents/* content/documents/
+	rsync -z blog@33.33.33.10:/srv/blog/www/content/images/* content/images/
