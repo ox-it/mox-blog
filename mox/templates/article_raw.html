@@ -10,6 +10,7 @@
 </p>
 {% endif %}
 <p class="date"><span>{{ article.locale_date }}</span></p>
+<p class="comments"><a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a></p>
 </header>
 <section class="entry">
   {#
