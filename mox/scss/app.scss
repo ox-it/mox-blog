@@ -105,7 +105,9 @@ footer  {
 //
 // A blog article
 article {
-  @include grid-column(12);
+  @include grid-row();
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2em;
   // Header
   //
   // Includes title and metadata about the article
@@ -117,6 +119,7 @@ article {
   // Contains the content of the article
   section.entry {
     @include grid-column(9);
+    margin-top: 1em;
     // Summary section
     //
     // Used to provide a tl;dr
