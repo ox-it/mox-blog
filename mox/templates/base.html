@@ -18,34 +18,27 @@
     <link href="{{ SITEURL }}/theme/css/app.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1><a href="{{ SITEURL }}">Mobile Oxford</a> <small>indistinctively different</small></h1>
-        <hr></hr>
-      </div>
+  <nav>
+    <div id="logo">
+      <h1>Mobile Oxford</h1>
+      <em>Team</em>
     </div>
-    <div class="row">
-      {% block content %}
-      {% endblock content %}
-      <div class="large-12 columns">
-        <hr>
-        <div class="row">
-          <div class="large-6 columns">
-            <p>Copyright thingy?</p>
-          </div>
-          <div class="large-6 columns">
-            <ul class="inline-list right">
-              <li><a href="#">IT Services</a></li>
-              <li><a href="#">Other friendly people</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <ul>
+      <li>Blog <em>Our notebook</em></li>
+      <li>Team Manual <em>The way we work</em></li>
+      <li>About <em>Info &amp; Contact</em></li>
+    </ul>
+  </nav>
 
-    </div>
-
-    <script>
-      $(document).foundation();
-    </script>
+  <div class="row">
+    {% block content %}
+    {% endblock content %}
+  </div>
+  <footer>
+    <p>Handcrafted in Oxford, United Kingdom</p>
+  </footer>
+  <script>
+    $(document).foundation();
+  </script>
   </body>
  </html>
