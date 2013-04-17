@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 {% for article in articles_page.object_list %}
+  <article>
   {% include 'article_raw.html' %}
+  </article>
 {% endfor %}
 {% include 'pagination.html' %}
 {% endblock content %}

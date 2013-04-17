@@ -150,6 +150,5 @@ article {
   // Full width section, but content aligned with the article
   section.comments {
     @include grid-column(9, true, false, 3);
-
   }
 }
