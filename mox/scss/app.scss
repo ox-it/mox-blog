@@ -42,13 +42,20 @@
   "foundation/components/tooltips",
   "foundation/components/dropdown";
 
+@import "compass/css3";
+
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
 
+$pantone-282: rgb(0, 33, 71);
+$oxford-blue: $pantone-282;
 $heading-font-family: 'Roboto Condensed', sans-serif;
 $body-font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5 {
   font-family: $heading-font-family;
+  a {
+    color: lighten($oxford-blue, 5%);
+  }
 }
 
 // Text rendering
@@ -56,6 +63,17 @@ h1, h2, h3, h4, h5 {
 // This has performance impacts on some browsers
 // but should be neglibible
 * {text-rendering: optimizeLegibility;}
+
+// Link rendering
+//
+//
+a {
+  &:hover {
+    @include transition(0.2s all ease-out);
+  }
+  @include transition(1s all ease-in);
+  color: lighten($oxford-blue, 15%);
+}
 
 // Images
 //
