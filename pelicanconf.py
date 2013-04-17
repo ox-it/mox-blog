@@ -26,3 +26,5 @@ CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 
 SITEURL = 'http://blog.m.ox.ac.uk'
 FEED_DOMAIN = SITEURL
+
+DISQUS_SITENAME = 'mobileoxford'
