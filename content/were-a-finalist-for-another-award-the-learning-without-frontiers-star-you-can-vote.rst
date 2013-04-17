@@ -2,31 +2,6 @@ We're a finalist for another award - The Learning Without Frontiers Star (you ca
 ########################################################################################
 :date: 2010-12-16 10:17
 
-.. raw:: html
-
-   <div class="p_embed p_image_embed">
-
-.. raw:: html
-
-   </p>
-
-|Lwf-awards-250|
-
-.. raw:: html
-
-   <p>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   </p>
 
 | Mobile Oxford is a finalist for another award - the Learning Without
 | Frontiers Star
