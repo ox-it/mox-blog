@@ -42,7 +42,7 @@ Providing links in our API
 --------------------------
 
 As we want our API to be easily usable and understandable, we investigated options to embed qualified links between
-resources in our API (hypermedia API). Various options are available (JSON-LD, OData, Collection+JSON...) and we made
+resources in our API (hypermedia). Various options are available (JSON-LD, OData, Collection+JSON...) and we made
 the choice of `HAL (Hypertext Application Language) <http://stateless.co/hal_specification.html>`_ because it makes a
 clear separation between properties of your resources and metadata (links) by using a standard syntax, easy to understand
 and not coupled to JSON.
