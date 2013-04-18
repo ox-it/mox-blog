@@ -3,7 +3,6 @@
 
 AUTHOR = u'Mobile Oxford'
 SITENAME = u'Mobile Oxford Blog'
-SITEURL = ''
 
 TIMEZONE = 'Europe/London'
 
@@ -30,10 +29,7 @@ PLUGINS = ['pelican.plugins.gravatar', 'pelican_gist']
 SITEURL = 'http://blog.m.ox.ac.uk'
 FEED_DOMAIN = SITEURL
 
-SITEURL = 'http://blog.m.ox.ac.uk'
-FEED_DOMAIN = SITEURL
-
-PLUGINS=['pelican.plugins.sitemap',]
+PLUGINS = ['pelican.plugins.sitemap']
 
 SITEMAP = {
     'format': 'xml',
