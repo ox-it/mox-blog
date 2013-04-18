@@ -152,8 +152,9 @@ article {
   header {
     @include grid-column(3);
     img.gravatar {
-      width: 30px;
-      height: 30px;
+      width: 45px;
+      height: 45px;
+      @include border-radius(4px);
     }
   }
   // Entry section
