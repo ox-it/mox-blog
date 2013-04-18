@@ -151,6 +151,10 @@ article {
   // Includes title and metadata about the article
   header {
     @include grid-column(3);
+    img.gravatar {
+      width: 30px;
+      height: 30px;
+    }
   }
   // Entry section
   //
