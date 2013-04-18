@@ -42,6 +42,46 @@
   "foundation/components/tooltips",
   "foundation/components/dropdown";
 
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+$pantone-282: rgb(0, 33, 71);
+$oxford-blue: $pantone-282;
+$heading-font-family: 'Roboto Condensed', sans-serif;
+$body-font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font-family;
+  a {
+    color: lighten($oxford-blue, 5%);
+  }
+}
+
+// Text rendering
+//
+// This has performance impacts on some browsers
+// but should be neglibible
+* {text-rendering: optimizeLegibility;}
+
+// Link rendering
+//
+//
+a {
+  &:hover {
+    @include transition(0.2s color ease-out);
+  }
+  @include transition(1s color ease-in);
+  color: lighten($oxford-blue, 15%);
+}
+
+// Images
+//
+// Styling for images
+img {
+  margin-bottom: 1em;
+}
+
 // Navigation
 //
 // nav bar including a logo div and a bunch of links
@@ -56,21 +96,29 @@ nav {
   div#logo {
     @include grid-column(3);
     h1 {
-      font-size: 25px;
-    }
-    em {
-      font-size: 15px;
+      font-size: emCalc(25px);
+      line-height: emCalc(28px);
+      small {
+        font-size: emCalc(13px);
+        display: block;
+      }
     }
   }
   ul {
-    list-style: none;
     @include grid-column(9);
+    list-style: none;
+    margin-top: 1em;
+    font-family: $heading-font-family;
     li {
-      display: inline-block;
-      line-height: 17px;
       @include grid-column(3);
+      display: inline-block;
+      font-size: emCalc(20px);
+      line-height: emCalc(18px);
+      padding-left: 0;
       em {
         display: block;
+        font-style: normal;
+        font-size: emCalc(13px);
       }
     }
   }
@@ -86,4 +134,54 @@ footer  {
   border-top: 1px solid #ccc;
   padding-top: 10px;
   text-align: center;
+}
+
+
+// Article
+//
+// A blog article
+article {
+  @include grid-row();
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2em;
+  // TODO Appears not to be working
+  &:last-child { border: 0 }
+  // Header
+  //
+  // Includes title and metadata about the article
+  header {
+    @include grid-column(3);
+  }
+  // Entry section
+  //
+  // Contains the content of the article
+  section.entry {
+    @include grid-column(9);
+    margin-top: 1em;
+    // Summary section
+    //
+    // Used to provide a tl;dr
+    section.summary {
+
+    }
+  }
+  // Comments section
+  //
+  // Full width section, but content aligned with the article
+  section.comments {
+    @include grid-column(9, true, false, 3);
+  }
+}
+
+// Pagination section
+//
+// A section which contains links forward/backward through time
+// allowing pagination through multiple blog articles
+section#pagination {
+  @include grid-row();
+  text-align: center;
+  padding-bottom: 2em;
+  a {
+    padding: 20px;
+  }
 }
