@@ -53,6 +53,7 @@ $body-font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5 {
   font-family: $heading-font-family;
+  clear: both;
   a {
     color: lighten($oxford-blue, 10%);
   }
@@ -79,7 +80,7 @@ a {
 //
 // Styling for images
 img {
-  margin-bottom: 1em;
+  margin: 1em;
 }
 
 // Navigation
