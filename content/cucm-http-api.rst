@@ -9,16 +9,16 @@ Building lightweight HTTP services in Java
 :email: martin.filliau@it.ox.ac.uk
 :summary: How we decided to build an intermediate layer of services in Java to be consumed by a Python application
 
-One of our projects requires access to a SOAP Web Service called `Cisco "CUCM" Administrative XML <http://developer.cisco.com/web/axl/docs>`_, used to manage Cisco IP phones. Our project being a Django (Python) application, we used the de facto SOAP library for Python called `Suds <https://fedorahosted.org/suds/>`_.
+Our telecoms projects requires access to a SOAP Web Service called `Cisco "CUCM" Administrative XML <http://developer.cisco.com/web/axl/docs>`_, used to manage Cisco IP phones. Our project being a Django (Python) application, we used the de facto SOAP library for Python called `Suds <https://fedorahosted.org/suds/>`_.
 
 .. image:: |filename|/images/cucm-phone.jpg
    :align: center
 
 Unfortunately, we encountered many problems as the CUCM service is composed of a lot of custom types, and we reached a point where suds was not good enough (except by starting to use a customised version of suds such as what is discussed `here <https://fedorahosted.org/suds/ticket/342>`_). Having difficulties to find an alternative in Python, we began to look at alternatives on different platforms.
 
--------------------------
-Java coming to our rescue
--------------------------
+------------------------
+Java comes to the rescue
+------------------------
 
 The Java platform is well-known for working with SOAP web services, and the tooling seemed to be appropriate and free to use. Generating an usable client to consume the SOAP web service is very easy (using `wsimport <http://docs.oracle.com/javase/6/docs/technotes/tools/share/wsimport.html>`_) but the main question was: *how do we expose the web service in a better way?*
 
