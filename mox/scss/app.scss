@@ -69,9 +69,9 @@ h1, h2, h3, h4, h5 {
 //
 a {
   &:hover {
-    @include transition(0.2s all ease-out);
+    @include transition(0.2s color ease-out);
   }
-  @include transition(1s all ease-in);
+  @include transition(1s color ease-in);
   color: lighten($oxford-blue, 15%);
 }
 
