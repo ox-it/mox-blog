@@ -53,8 +53,9 @@ $body-font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
 
 h1, h2, h3, h4, h5 {
   font-family: $heading-font-family;
+  clear: both;
   a {
-    color: lighten($oxford-blue, 5%);
+    color: lighten($oxford-blue, 10%);
   }
 }
 
@@ -72,14 +73,14 @@ a {
     @include transition(0.2s color ease-out);
   }
   @include transition(1s color ease-in);
-  color: lighten($oxford-blue, 15%);
+  color: lighten($oxford-blue, 20%);
 }
 
 // Images
 //
 // Styling for images
 img {
-  margin-bottom: 1em;
+  margin: 1em;
 }
 
 // Navigation
@@ -151,6 +152,12 @@ article {
   // Includes title and metadata about the article
   header {
     @include grid-column(3);
+    img.gravatar {
+      width: 45px;
+      height: 45px;
+      @include border-radius(4px);
+      margin: 0 0 0.5em 0;
+    }
   }
   // Entry section
   //
@@ -170,6 +177,15 @@ article {
   // Full width section, but content aligned with the article
   section.comments {
     @include grid-column(9, true, false, 3);
+  }
+
+  span.tag {
+    color: white;
+    @include text-shadow(0 -1px 1px #444);
+    padding: 4px;
+    @include border-radius(4px);
+    background-color: #666;
+    font-size: emCalc(12px);
   }
 }
 
