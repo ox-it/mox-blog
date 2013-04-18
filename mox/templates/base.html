@@ -6,10 +6,8 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
   <head>
   	<meta charset="utf-8" />
-
   	<!-- Uncomment to make IE8 render like IE7 -->
   	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Oxford Blog</title>
@@ -20,26 +18,34 @@
   <body>
   <nav>
     <div id="logo">
-      <h1>Mobile Oxford</h1>
-      <em>Team</em>
+      <h1><a href="{{ SITEURL }}">Mobile Oxford <small>Team</small></a></h1>
     </div>
     <ul>
-      <li>Blog <em>Our notebook</em></li>
-      <li>Team Manual <em>The way we work</em></li>
-      <li>About <em>Info &amp; Contact</em></li>
+      <li><a href="{{ SITEURL }}">Blog <em>Our notebook</em></a></li>
+      {#<li>Team Manual <em>The way we work</em></li>#}
+      <li><a href="/pages/about/" title="About the Mobile Oxford Team">About <em>Info &amp; Contact</em></a></li>
     </ul>
   </nav>
 
+  {% block content %}
+  {% endblock content %}
 
-  <div class="row">
-    {% block content %}
-    {% endblock content %}
-  </div>
   <footer>
     <p>Handcrafted in Oxford, United Kingdom</p>
   </footer>
   <script>
     $(document).foundation();
   </script>
+  {% if DISQUS_SITENAME and SITEURL %}
+  <script type="text/javascript">
+    var disqus_shortname = '{{ DISQUS_SITENAME }}';
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  </script>
+  {% endif %}
   </body>
  </html>
