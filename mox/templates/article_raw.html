@@ -2,15 +2,16 @@
   <h2><a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></h2>
   <h3>{{ article.author.name }}</h3>
   {% if article.author_gravatar %}<img src="{{ article.author_gravatar }}" />{% endif %}
+  <p class="date"><span>{{ article.locale_date }}</span></p>
   {% if article.tags %}
   <p class="tags">
   {% for tag, articles in tags %}
-    {{ tag }}{% if not loop.last %},{% endif %}
+    <span class="tag">{{ tag }}</span>
   {% endfor %}
   </p>
-{% endif %}
-<p class="date"><span>{{ article.locale_date }}</span></p>
-<p class="comments"><a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a></p>
+  {% endif %}
+  <p class="comments"><a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a></p>
+
 </header>
 <section class="entry">
   {#
