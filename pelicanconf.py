@@ -11,6 +11,8 @@ DEFAULT_LANG = u'en'
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
 THEME = 'mox'
 
+RELATIVE_URLS = False
+
 DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = ['images', 'documents']
