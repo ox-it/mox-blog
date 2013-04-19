@@ -7,9 +7,7 @@ Building web services for the new Mobile Oxford
 :email: martin@filliau.com
 :summary: How we decided to build a generic API ready to support a various range of clients around the University
 
-We began to build an entirely new version of Mobile Oxford to replace the old one which had some conceptual issues
-(large code base mostly untested, various performance problems...) and wasn't adapted anymore to the market we are
-targeting (will be described in more details in a different blog post).
+We began to build an entirely `new version of Mobile Oxford <http://new.m.ox.ac.uk>`_ to replace the old one which had built up technical debt over the years and with the rapid changes in smartphone technology, was unable to target our market appropriately (more details in a different blog post).
 
 The new architecture is centered around an API providing data to a JS application (client). We decided to build an
 API over HTTP (RESTful-ish), serving JSON as our primary representation as it serves our immediate needs
