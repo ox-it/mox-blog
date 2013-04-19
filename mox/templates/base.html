@@ -10,7 +10,7 @@
   	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile Oxford Blog</title>
+    <title>Mobile Oxford Blog{% block title %}{% endblock title %}</title>
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
     <link href="{{ SITEURL }}/theme/css/normalize.css" rel="stylesheet" />
     <link href="{{ SITEURL }}/theme/css/app.css" rel="stylesheet" />
