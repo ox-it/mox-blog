@@ -4,7 +4,7 @@
   {% if article.author_gravatar %}<img class="gravatar" src="{{ article.author_gravatar }}" />{% endif %}
   {% if article.tags %}
   <p class="tags">
-  {% for tag, articles in tags %}
+  {% for tag in article.tags %}
     <span class="tag">{{ tag }}</span>
   {% endfor %}
   </p>
