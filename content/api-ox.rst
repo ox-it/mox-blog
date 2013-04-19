@@ -9,9 +9,8 @@ Building web services for the new Mobile Oxford
 
 We began to build an entirely `new version of Mobile Oxford <http://new.m.ox.ac.uk>`_ to replace the old one which had built up technical debt over the years and with the rapid changes in smartphone technology, was unable to target our market appropriately (more details in a different blog post).
 
-The new architecture is centered around an API providing data to a JS application (client). We decided to build an
-API over HTTP (RESTful-ish), serving JSON as our primary representation as it serves our immediate needs
-(but it should be easily extensible).
+The new architecture is centered around an API providing data to a JS application (client). We decided to build our
+API over HTTP (RESTful-ish), serving JSON as our primary representation and architecting in such a way that it is easy to extend this to other representations.
 
 The API is presenting information about different domains of the university, some services already provided by the
 current `Mobile Oxford <http://m.ox.ac.uk>`_ and new features as well. It is mostly organised as a search solution,
