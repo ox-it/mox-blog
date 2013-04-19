@@ -59,12 +59,12 @@ User Experience
 Not all data is created equal. Some can be accessed quickly, some can be cached
 and some is even slow to request yet extremely time-sensitive. In our case the
 last, slowly retrieved time sensitive data is a good description for the local
-bus real-time information provider. Let me give a common m.ox usecase as an
-example, "where is the nearest bus stop, and when is the next bus?" we can
-answer the first part of this query almost immediately, however the real-time
-information means a call to an external provider. Something we have no control
-over, which could respond at any time or not at all. Obviously it would be crazy
-to wait for this to respond before rendering a page to the user.
+bus real-time information provider. For example, "where is the nearest bus stop,
+and when is the next bus?" we can answer the first part of this query almost
+immediately, however the real-time information means a call to an external
+provider. Something we have no control over, which could respond at any time or
+not at all. Obviously it would be crazy to wait for this to respond before
+rendering a page to the user.
 
 We find this pattern in many places in Mobile Oxford, a *potentially* fast
 initial response followed up with slow to retrieve timely data. Library
@@ -92,8 +92,8 @@ any required AJAX requests. Of course this creates other problems particularly
 with the lead time on making deployments and having users *actually* install the
 updates.
 
-Further Considerations
-----------------------
+Connectivity, errors and other issues
+-------------------------------------
 
 Beyond offering offline support your application should handle the case of
 "partial connectivity" where the user might be in an area of flaky network
@@ -108,5 +108,5 @@ query the holdings. This is still useful information for users and when
 developing the UI it's important to pre-empt partial page loads such as this.
 
 Of course we aren't experts on this subject, these are just a few of the lessons
-we have learnt and wanted to share. If you have any further considerations or
-questions feel free to comment or `send me an email <mailto:david.king@it.ox.ac.uk>`_.
+we have learnt and wanted to share. If you have any questions feel free to
+comment or `send me an email <mailto:david.king@it.ox.ac.uk>`_.
