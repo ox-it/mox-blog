@@ -4,7 +4,7 @@ Building web services for the new Mobile Oxford
 :date: 2013-04-03 10:20
 :slug: mobile-oxford-services
 :author: Martin Filliau
-:email: martin@filliau.com
+:email: martin.filliau@it.ox.ac.uk
 :summary: How we decided to build a generic API ready to support a various range of clients around the University
 
 We began to build an entirely `new version of Mobile Oxford <http://new.m.ox.ac.uk>`_ to replace the old one which had built up technical debt over the years and with the rapid changes in smartphone technology, was unable to target our market appropriately (more details in a different blog post).
