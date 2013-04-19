@@ -12,14 +12,13 @@ We began to build an entirely `new version of Mobile Oxford <http://new.m.ox.ac.
 The new architecture is centered around an API providing data to a JS application (client). We decided to build our
 API over HTTP (RESTful-ish), serving JSON as our primary representation and architecting in such a way that it is easy to extend this to other representations.
 
-The API is presenting information about different domains of the university, some services already provided by the
-current `Mobile Oxford <http://m.ox.ac.uk>`_ and new features as well. It is mostly organised as a search solution,
-for example:
+The API presents information about different domains in the university, some of which are already provided by the
+current `Mobile Oxford <http://m.ox.ac.uk>`_ and some new ones as well. After analysing our use cases, we found that most were search problems and as such we organised as a search solution, for example:
 
 - searching for people
 - search libraries (books)
 - search graduate courses
-- search for places 
+- search for places
 
 Towards a generic API
 ---------------------
