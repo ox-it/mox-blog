@@ -3,6 +3,7 @@ Building web services for the new Mobile Oxford
 
 :date: 2013-04-18 10:20
 :slug: mobile-oxford-services
+:tags: http, api, json
 :author: Martin Filliau
 :email: martin.filliau@it.ox.ac.uk
 :summary: How we decided to build a generic API ready to support a various range of clients around the University
