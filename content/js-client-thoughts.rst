@@ -66,6 +66,9 @@ provider. Something we have no control over, which could respond at any time or
 not at all. Obviously it would be crazy to wait for this to respond before
 rendering a page to the user.
 
+.. image:: |filename|/images/new-mox-library.png
+   :class: right
+
 We find this pattern in many places in Mobile Oxford, a *potentially* fast
 initial response followed up with slow to retrieve timely data. Library
 availability is another example, "this book can be found in this library" can be
