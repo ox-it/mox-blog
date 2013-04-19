@@ -23,13 +23,10 @@ current `Mobile Oxford <http://m.ox.ac.uk>`_ and some new ones as well. After an
 Towards a generic API
 ---------------------
 
-We knew that the current version of Mobile Oxford was already consumed by other clients (such as an internal iPad
-application), although it wasn't developed with that goal in mind, and not very easy to consume due to the way
-information was represented (a JSON output of the template context).
+The current version of Mobile Oxford is already consumed by other clients (such as the `Blavatnik School of Government <http://www.bsg.ox.ac.uk/>`_ internal iPad application), as the system was not originally designed for this purpose, it provided a sub-optimal experience for those trying to integrate with it (a JSON output of a template context for an HTML page).
 
 With that information in mind, we decided that our API should be generic enough to be consumed by other applications
-as well, Mobile Oxford being the first consumer for it. It makes sense for us to build reusable services as we have
-the feeling that some other teams might have the same needs than us.
+as well, Mobile Oxford being the first consumer for it. Being an aggregator and an integrator of many disparate systems in the university, it makes sense for us to be able to output these to others in a consistent, easy to use form.
 
 This of course raises some issues, we now have to carefully consider the clear separation between data and our client
 (versus having a "private" API tailored for our client and a public one, which we currently do not feel the need to have).
