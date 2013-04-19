@@ -26,7 +26,9 @@ Towards a generic API
 The current version of Mobile Oxford is already consumed by other clients (such as the `Blavatnik School of Government <http://www.bsg.ox.ac.uk/>`_ internal iPad application), as the system was not originally designed for this purpose, it provided a sub-optimal experience for those trying to integrate with it (a JSON output of a template context for an HTML page).
 
 With that information in mind, we decided that our API should be generic enough to be consumed by other applications
-as well, Mobile Oxford being the first consumer for it. Being an aggregator and an integrator of many disparate systems in the university, it makes sense for us to be able to output these to others in a consistent, easy to use form.
+as well, Mobile Oxford being the first consumer for it. Being an aggregator and an integrator of many disparate systems
+in the university, it makes sense for us to be able to output these to others in a consistent, easy to use form, and 
+vendor agnostic.
 
 This of course raises some issues, we now have to carefully consider the clear separation between data and our client
 (versus having a "private" API tailored for our client and a public one, which we currently do not feel the need to have).
