@@ -89,11 +89,11 @@ into those here. Perhaps if people are interested I (or another colleague) could
 provide more details why we decided to go with a native application.
 
 Having users install your JavaScript client essentially circumvents your
-"initial page load" problem. Now the initial load is done locally on their device,
-as such it should only be encumbered by JavaScript execution time, rendering and
-any required AJAX requests. Of course this creates other problems particularly
-with the lead time on making deployments and having users *actually* install the
-updates.
+"initial page load" problem. Now the initial load is done locally on their
+device, as such it should only be encumbered by JavaScript execution time,
+rendering and any required AJAX requests. Of course this creates other problems
+particularly with the lead time on making deployments and having users
+*actually* install the updates.
 
 Connectivity, errors and other issues
 -------------------------------------
@@ -106,9 +106,26 @@ providing UI elements for users to retry themselves.
 We have struggled, and continue to struggle with capturing errors in JavaScript
 and relaying that information to users. When many services are being engaged to
 produce a single page load this becomes a complex problem. With Mobile Oxford we
-may be unable to access real-time library information but still be able to
-query the holdings. This is still useful information for users and when
-developing the UI it's important to pre-empt partial page loads such as this.
+may be unable to access real-time library information but still be able to query
+the holdings. This is still useful information for users and when developing the
+UI it's important to pre-empt partial page loads such as this.
+
+Further reading
+---------------
+
+Writing shared client and server-side code is becoming a major talking point
+recently. While it's clear nobody has "solved" the above problems there are some
+interesting projects progressing in this area:
+
+* `Rendr from Airbnb <http://nerds.airbnb.com/weve-open-sourced-rendr>`_, uses
+  conventions in structuring your application to allow for a single code base to
+  run in both the server and client environments.
+* `backbone-serverside <https://github.com/SC5/backbone-serverside>`_, a recent
+  `post to Mozilla Hacks
+  <https://hacks.mozilla.org/2013/04/serving-backbone-for-robots-legacy-browsers/>`_
+  on a different approach to Rendr. Instead of providing a way to structure your
+  application this project seeks to "polyfill" specific client-side only API's
+  allowing your application to run on the server.
 
 Of course we aren't experts on this subject, these are just a few of the lessons
 we have learnt and wanted to share. If you have any questions feel free to
