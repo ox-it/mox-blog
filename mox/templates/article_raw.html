@@ -1,0 +1,22 @@
+<header role="article-info">
+  <h2><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></h2>
+  <h3 class="author">{{ article.author.name }}</h3>
+  {% if article.author_gravatar %}<img class="gravatar" src="{{ article.author_gravatar }}" />{% endif %}
+  {% if article.tags %}
+  <p class="tags">
+  {% for tag in article.tags %}
+    <span class="tag">{{ tag }}</span>
+  {% endfor %}
+  </p>
+  {% endif %}
+  <p class="comments"><a href="{{ SITEURL }}/{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a></p>
+  <p class="date"><span>{{ article.locale_date }}</span></p>
+</header>
+<section class="entry">
+  {#
+  {% if article.summary %}
+  <section class="summary">{{ article.summary }}</section>
+  {% endif %}
+  #}
+  {{ article.content }}
+</section>

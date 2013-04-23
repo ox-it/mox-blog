@@ -1,11 +1,9 @@
 {% extends "base.html" %}
+{% block title %} - {{ article.title }}{% endblock title %}
 {% block content %}
-<div class="large-12 columns">
   <article>
-    <h3>{{ article.title }}</h3>
-    <h6>{{ article.author.name }}</h6>
-    <section class="entry">{{ article.content }}</section>
-    <p class="date"><span>{{ article.locale_date }}</span></p>
+  {% include 'article_raw.html' %}
+  {% include 'article_comments.html' %}
   </article>
-</div>
 {% endblock content %}
+
