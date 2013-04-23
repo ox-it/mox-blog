@@ -43,9 +43,12 @@ be a matter of adding one manifest file to describe the application).
 Identity, responsiveness and the future of the web
 --------------------------------------------------
 
-Ade Oshineye, developer advocate for Google Plus
+Ade Oshineye, developer advocate for Google Plus did an interesting presentation, underlining that responsiveness
+goes beyond responsive *design*, to responsive **context** (e.g. mobile vs tablet, portrait vs landscape...), and
+being responsive **server-side** as well (providing nice degradation if the latency is too high for example).
 
 Scaling applications with RabbitMQ
 ----------------------------------
 
-`RabbitMQ Simulator <https://github.com/RabbitMQSimulator/RabbitMQSimulator>`_
+Good introduction on messaging by Àlvaro Videla, we have been quite impressed by the `RabbitMQ Simulator <https://github.com/RabbitMQSimulator/RabbitMQSimulator>`_,
+seems awesome for learning messaging... and also for publishing interactive documentation!
