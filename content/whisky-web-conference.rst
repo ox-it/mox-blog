@@ -20,7 +20,7 @@ They, of course, need their API to be easily usable, they have built an "API for
 This can be seen as a *light* version of `WSDL <http://en.wikipedia.org/wiki/Web_Services_Description_Language>`_ (generally used to descripe SOAP web services).
 This "discovery document" is used to generate client libraries per language, which allow more advanced uses in addition to plain HTTP calls such as `RPC Batch <https://developers.google.com/api-client-library/javascript/features/rpcbatch>`_ (sending multiple requests at once), `CloudEndpoint <https://developers.google.com/appengine/docs/java/endpoints/overview>`_ (generating APIs) and `Protobuffers <https://developers.google.com/protocol-buffers/docs/overview>`_.
 
-We have similar concerns about the discovery of our API
+We have similar concerns about the discovery of our API in Mobile Oxford (see `our blog post on building web services for the new version <http://blog.m.ox.ac.uk/posts/2013/04/18/mobile-oxford-services/>`_) so it was interesting to see how they resolved some concerns that we have - although we are taking a different approach.
 
 Bringing the Open Web and APIs to mobile devices with Firefox OS
 ----------------------------------------------------------------
