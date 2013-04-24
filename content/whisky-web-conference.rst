@@ -3,7 +3,7 @@ Whisky Web conference
 
 :date: 2013-04-15 09:40
 :slug: whisky-web-conference
-:author: Martin Filliau
+:author: Martin Filliau, David King
 :summary: Some notes on what we have seen at the Whisky Web Conference
 
 We have been to the `Whisky Web conference <http://whiskyweb.co.uk>`_ last week, held in Edinburgh and
@@ -59,3 +59,44 @@ Scaling applications with RabbitMQ
 
 Good introduction on messaging by Àlvaro Videla, we have been quite impressed by the `RabbitMQ Simulator <https://github.com/RabbitMQSimulator/RabbitMQSimulator>`_,
 seems awesome for learning messaging... and also for publishing interactive documentation!
+
+Building Better Developers
+--------------------------
+
+`Rowan Merewood <https://twitter.com/rowan_m>`_ from Inviqa presented on how we
+can develop our own skills as developers and how your employer can enable your
+your personal growth. Using examples such as Valve's employee handbook which
+describes their developers as T-shaped, meaning they have a deep expertise in
+one area whilst being broad-generalists in others.
+
+Other take-away comments/ideas from this talk for me were:
+
+* Deliberate practice:
+
+  * Coding Kata's -- repeated exercises to hone your abilities.
+
+* Deliver bad news early.
+
+* Attack ideas, not people.
+
+* If you're the smartest person in the room, you're probably not learning
+  anything.
+
+Coming Soon to a Browser Near You
+---------------------------------
+
+`Alan Greenblatt <http://blattchat.com/>`_ from Adobe gave a talk on some new
+browser features. He discussed how Adobe want to see more powerful typesetting
+features in browsers, to that end he showed us the ``shape-inside`` and
+``shape-outside`` features of the `CSS Exclusions
+<http://dev.w3.org/csswg/css-exclusions/>`_ specification which Adobe has
+contributed to. Hopefully this will enable people express more creativity
+designing magazine style layouts in HTML+CSS. On this same topic we were also
+demonstrated the ``flow-into`` and ``flow-from`` properties from the `CSS
+Regions <http://dev.w3.org/csswg/css-regions/>`_ specification. These flow
+regions allows your content to flow through multiple regions and handles being
+resized / responding to media-queries.
+
+Other features discussed included the CSS Filters API which was demonstrated
+through Adobe's `CSS FilterLab
+<http://html.adobe.com/webplatform/graphics/customfilters/cssfilterlab/>`_.
