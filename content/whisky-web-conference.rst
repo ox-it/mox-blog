@@ -64,7 +64,7 @@ Building Better Developers
 --------------------------
 
 `Rowan Merewood <https://twitter.com/rowan_m>`_ from Inviqa presented on how we
-can develop our own skills as developers and how your employer can enable your
+can develop our own skills as developers and how your employer can enable
 your personal growth. Using examples such as Valve's employee handbook which
 describes their developers as T-shaped, meaning they have a deep expertise in
 one area whilst being broad-generalists in others.
