@@ -10,15 +10,15 @@ Thoughts on JavaScript clients
 :summary: How we started viewing writing JavaScript clients as a tradeoff
           between application state and user experience.
 
-In August last year we took the decision to rewrite Mobile Oxford as a
-JavaScript client backed by a `generic API
+In August last year we took the decision to `rewrite Mobile Oxford
+<http://new.m.ox.ac.uk>`_ as a JavaScript client backed by a `generic API
 <http://blog.m.ox.ac.uk/posts/2013/04/18/mobile-oxford-services/>`_. There were
-many reasons for taking this decision which will be covered in other blog posts.
-After a short period of development on the JavaScript client we realised some
-assumptions we'd made upfront were either incorrect or infeasible. This process
-of compromising on your ideals to deliver a product is common in software
-development, hopefully this post will provide a glimpse into a couple of
-examples of this.
+many reasons for taking this decision which will be covered in other blog
+posts.  After a short period of development on the JavaScript client we
+realised some assumptions we'd made upfront were either incorrect or
+infeasible. This process of compromising on your ideals to deliver a product is
+common in software development, hopefully this post will provide a glimpse into
+a couple of examples of this.
 
 Our initial outlook on web applications (or more specifically, JavaScript
 clients): initial page loads should *always* deliver a fully rendered page.
@@ -111,9 +111,12 @@ UI it's important to pre-empt partial page loads such as this.
 Further reading
 ---------------
 
-Writing shared client and server-side code is becoming a major talking point
-recently. While it's clear nobody has "solved" the above problems there are some
-interesting projects progressing in this area:
+The code and documentation for our JavaScript client is open source and
+`available on github <https://github.com/ox-it/moxie-js-client>`_.
+
+Writing shared client and server-side code is becoming a
+major talking point recently. While it's clear nobody has "solved" the above
+problems there are some interesting projects progressing in this area:
 
 * `Rendr from Airbnb <http://nerds.airbnb.com/weve-open-sourced-rendr>`_, uses
   conventions in structuring your application to allow for a single code base to
