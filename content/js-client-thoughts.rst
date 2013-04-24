@@ -10,12 +10,15 @@ Thoughts on JavaScript clients
 :summary: How we started viewing writing JavaScript clients as a tradeoff
           between application state and user experience.
 
-In August last year we took the decision to rewrite Mobile Oxford. There were
+In August last year we took the decision to rewrite Mobile Oxford as a
+JavaScript client backed by a `generic API
+<http://blog.m.ox.ac.uk/posts/2013/04/18/mobile-oxford-services/>`_. There were
 many reasons for taking this decision which will be covered in other blog posts.
-At the outset of any major project like this you tend to make many assumptions,
-especially if you lack experience in the domain. This process of compromising on
-your ideals to deliver a product is common in software development, hopefully
-this post will provide a glimpse into one example of this.
+After a short period of development on the JavaScript client we realised some
+assumptions we'd made upfront were either incorrect or infeasible. This process
+of compromising on your ideals to deliver a product is common in software
+development, hopefully this post will provide a glimpse into a couple of
+examples of this.
 
 Our initial outlook on web applications (or more specifically, JavaScript
 clients): initial page loads should *always* deliver a fully rendered page.
@@ -27,40 +30,35 @@ If you're interested in an example of this behaviour `Twitter
 the Webkit (or Firefox) developer tools network interface open.
 
 What we ended up with: Static HTML response on all URLs which bootstraps the
-page with a JavaScript framework. This framework routes the request to a view
-capable of requesting additional resources and rendering a full page output.
+page with a JavaScript model-view-controller (MVC) framework. This framework
+routes the request to a view capable of requesting additional resources and
+rendering a full page output.
 
 The reasons for compromising on this initial vision are found somewhere between,
 "it's too complex" and "that's a bad user experience".
 
-Added complexity
-----------------
+Increasing Complexity
+---------------------
 
 In order to render an identical page from a "JavaScript client request" and a
 good ol' fashioned HTTP Accept: "HTML please!" request, your display logic must
-be shared by your client and server. This is *not* a simple task, also this
-isn't the same as sharing your templates between both client and server it's all
-business logic apart from requesting the data itself.
+be shared by your client and server. Sharing templates on client/server is a
+good start for this approach, but duplicating the logic which renders those
+templates requires a *lot* of effort.
 
-JavaScript templating tends to work by selecting an element in the page,
-emptying it from the DOM and inserting the DOM elements generated from your
-JavaScript templates. So a single page load could be made up of several
-different templates being rendered. On the server you tend to get everything in
-order and render a complete output hopefully in a template language which allows
-template inheritance.
-
-Despite all this added complexity it's always possible to provide both
-fully-rendered HTML responses alongside a JavaScript client rendering data
-fetched asynchronously.
+We progressed with a split code base across the client and server for a couple
+of weeks before it proved to be untenable for us. Alternatives to splitting your
+codebase exist in running a JavaScript runtime on the server, see `further
+reading`_ for more information on this.
 
 User Experience
 ---------------
 
 Not all data is created equal. Some can be accessed quickly, some can be cached
-and some is even slow to request yet extremely time-sensitive. In our case the
-last, slowly retrieved time sensitive data is a good description for the local
-bus real-time information provider. For example, "where is the nearest bus stop,
-and when is the next bus?" we can answer the first part of this query almost
+and some can be slow to request yet extremely time-sensitive. In our case the
+last, slowly retrieved time sensitive data is a good example of the local bus
+real-time information provider. For example, "where is the nearest bus stop, and
+when is the next bus?" we can answer the first part of this query almost
 immediately, however the real-time information means a call to an external
 provider. Something we have no control over, which could respond at any time or
 not at all. Obviously it would be crazy to wait for this to respond before
@@ -85,8 +83,8 @@ Native Application Containers
 -----------------------------
 
 There are many reasons why native applications are desirable, I won't be going
-into those here. Perhaps if people are interested I (or another colleague) could
-provide more details why we decided to go with a native application.
+into those here. If you are interested to hear more leave a comment and we'll
+try to write a few words on this.
 
 Having users install your JavaScript client essentially circumvents your
 "initial page load" problem. Now the initial load is done locally on their
@@ -127,6 +125,8 @@ interesting projects progressing in this area:
   application this project seeks to "polyfill" specific client-side only API's
   allowing your application to run on the server.
 
-Of course we aren't experts on this subject, these are just a few of the lessons
-we have learnt and wanted to share. If you have any questions feel free to
-comment or `send me an email <mailto:david.king@it.ox.ac.uk>`_.
+This covers just a few of the challenges we've encountered building a robust
+JavaScript client. Expect future posts to cover topics such as code quality,
+testing and server-side JavaScript. Of course if you'd like to hear about
+something in particular leave a comment or `send me an email
+<mailto:david.king@it.ox.ac.uk>`_.
