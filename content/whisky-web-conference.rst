@@ -52,7 +52,7 @@ Identity, responsiveness and the future of the web
 
 Ade Oshineye, developer advocate for Google Plus did an interesting presentation, underlining that responsiveness
 goes beyond responsive *design*, to responsive **context** (e.g. mobile vs tablet, portrait vs landscape...), and
-being responsive **server-side** as well (providing nice degradation if the latency is too high for example).
+being responsive server-side as well (providing nice degradation if the latency is too high for example).
 
 Scaling applications with RabbitMQ
 ----------------------------------
