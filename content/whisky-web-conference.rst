@@ -29,16 +29,23 @@ language, which allow more advanced uses in addition to plain HTTP calls such as
 (sending multiple requests at once), `CloudEndpoint <https://developers.google.com/appengine/docs/java/endpoints/overview>`_
 (generating APIs) and `Protobuffers <https://developers.google.com/protocol-buffers/docs/overview>`_.
 
-We have similar concerns about the discovery of our API in Mobile Oxford (see `our blog post on building web services for the new version <http://blog.m.ox.ac.uk/posts/2013/04/18/mobile-oxford-services/>`_
-) so it was interesting to see how they resolved some concerns that we have - although we are taking a different approach.
+We have similar concerns about the discovery of our API in Mobile Oxford so it was interesting to see how they resolved some concerns that
+we have - although we are taking a different approach (see `our blog post on building web services for the new version <http://blog.m.ox.ac.uk/posts/2013/04/18/mobile-oxford-services/>`_).
 
 Bringing the Open Web and APIs to mobile devices with Firefox OS
 ----------------------------------------------------------------
 
-Robert Nyman from Mozilla did an introduction of Firefox OS and the possibilities for creating (web)apps on their platform.
+Robert Nyman from Mozilla did an introduction of `Firefox OS <https://marketplace.firefox.com/developers/>`_
+and the possibilities for creating (web)apps on their platform.
 
-It would be interesting to (try to) deploy the new Mobile Oxford on Firefox OS (with our current setup it should just
-be a matter of adding one manifest file to describe the application).
+It would be interesting to (try to) deploy the `new Mobile Oxford <http://new.m.ox.ac.uk>`_ on Firefox OS
+(with our current setup it should be fairly easy, by adding a JSON manifest file to describe the application).
+We are currently working on packaging `our JS app <http://blog.m.ox.ac.uk/posts/2013/04/24/js-client-thoughts/>`_
+with `PhoneGap/Apache Cordova <http://cordova.apache.org/>`_, deploying on Firefox OS means that we do not need
+to use any native container.
+
+The "open marketplace" concept is interesting, and the ability to build your own marketplace could be interesting
+for an institution such as the University which could potentially have (internal) apps promoted in one central place.
 
 Identity, responsiveness and the future of the web
 --------------------------------------------------
