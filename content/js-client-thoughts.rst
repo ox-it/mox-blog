@@ -1,7 +1,7 @@
 Thoughts on JavaScript clients
 ##############################
 
-:date: 2013-04-16 18:26
+:date: 2013-04-24 11:16
 :tags: javascript, client, api
 :category: JavaScript
 :slug: js-client-thoughts
