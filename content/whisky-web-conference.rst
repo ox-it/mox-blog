@@ -7,18 +7,19 @@ Whisky Web conference
 :summary: Some notes on what we have seen at the Whisky Web Conference
 
 Last week we attended the `Whisky Web conference <http://whiskyweb.co.uk>`_, held in Edinburgh and
-had a very enjoyable experience with very good speakers. Below are a few notes.
+had a very enjoyable experience with excellent speakers. Below are a few notes.
 
 How Google Builds Web Services
 ------------------------------
 
-Ian Barber, developer advocate for Google Plus gave a very good presentation about web services at Google,
-it was very relevant to us regarding what we are doing with the new Mobile Oxford.
+Ian Barber, developer advocate for Google Plus gave a very interesting presentation about web services at Google,
+it was quite relevant for us regarding what we are doing with the new Mobile Oxford.
 
 They usually build a "private" API for internal use, not released to the general public and a "public" API.
 This separation allow them to publish less/different data from their private API, they can also change
 their private API more easily to fit their needs (the public API has to be stable). He also raised the question
-of identifying the customers of your API; how do you get to know them and what they want (+ cost vs. benefit when building an API).
+of identifying the customers of your API; how do you get to know them and what they want... as well as making sure
+you do a cost/benefit analysis.
 
 They of course, need their API to be easily usable, they have built an "API for APIs" to help `discovery <https://developers.google.com/discovery/>`_,
 in addition to use a "discovery document" (using `JSON Schema <http://json-schema.org/>`_) to describe methods available
@@ -49,6 +50,7 @@ to use any native container.
 
 The "open marketplace" concept is interesting, and the ability to build your own marketplace could be interesting
 for an institution such as the University which could potentially have (internal) apps promoted in one central place.
+This, of course, could also raise some issues on discovery of this marketplace and how to advertise it efficiently.
 
 Identity, responsiveness and the future of the web
 --------------------------------------------------
@@ -72,7 +74,7 @@ personal growth. Using examples such as Valve's employee handbook which
 describes their developers as T-shaped, meaning they have a deep expertise in
 one area whilst being broad-generalists in others.
 
-Other take-away comments/ideas from this talk for me were:
+Other take-away comments/ideas from this talk for me (David) were:
 
 * Deliberate practice:
 
