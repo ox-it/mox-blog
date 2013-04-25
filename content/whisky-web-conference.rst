@@ -9,6 +9,11 @@ Whisky Web conference
 Last week we attended the `Whisky Web conference <http://whiskyweb.co.uk>`_, held in Edinburgh and
 had a very enjoyable experience with excellent speakers. Below are a few notes.
 
+.. figure:: |filename|/images/airth-castle.jpg
+   :alt: Airth Castle
+
+   Conference Venue, Airth Castle - Photo taken by `Juozas Kaziukenas <http://www.flickr.com/photos/juokaz/8660439470/in/set-72157633270149231>`__
+
 How Google Builds Web Services
 ------------------------------
 
