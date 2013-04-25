@@ -13,7 +13,7 @@ THEME = 'mox'
 
 RELATIVE_URLS = False
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 STATIC_PATHS = ['images', 'documents']
 
