@@ -30,6 +30,7 @@ PLUGINS = ['pelican.plugins.gravatar', 'pelican_gist', 'pelican.plugins.sitemap'
 
 SITEURL = 'http://blog.m.ox.ac.uk'
 FEED_DOMAIN = SITEURL
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 
 SITEMAP = {
     'format': 'xml',
