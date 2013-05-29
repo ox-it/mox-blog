@@ -46,8 +46,9 @@ JSON, we should also cache images of all the items.
 
 Enter Python, thanks to being "batteries included" we're able to load the
 JSON, parse it, find all the images we want to preload and download them all
-into the build folder. We're also able to use the string.Template class
-instead of using a ``sed`` substitution. The Python code which does this
+into the build folder. We're also able to use the `string.Template
+<http://docs.python.org/2/library/string.html?highlight=string.template#string.Template>`__
+class instead of using a ``sed`` substitution. The Python code which does this
 preloading is `available as a gist <https://gist.github.com/davbo/5670421>`__.
 
 The output from this process is an index.html with 2 blocks of embedded JSON,
