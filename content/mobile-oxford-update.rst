@@ -1,6 +1,14 @@
 Mobile Oxford update
 ====================
 
+:date: 2013-07-23 11:40
+:tags: m.ox, oxford, update
+:category: Mobile Oxford
+:slug: mobile-oxford-update
+:author: Dave King
+:summary: Recent developments from the Mobile Oxford project the today view,
+          events and personalisation.
+
 As you may know, we've been working on an updated version of Mobile
 Oxford for some time now. We're really happy with the progress and wanted to
 share a preview of some of the new features before we launch.
@@ -16,20 +24,32 @@ departure information for them front and centre. We hope this becomes a
 one-stop shop for lots of existing Mobile Oxford users, particularly if you're
 a commuter.
 
-Other information we're showing on the Today view currently includes. The
-amount of free spaces at each of the five Park & Rides surrounding Oxford.
-All the events going on in Oxford for the day, the rowing information for each
-river and the term date of the University.
+.. image:: |filename|/images/today-view.png
+   :class: right
+
+Other information we're showing on the Today view currently includes: the
+amount of free spaces at each of the Park & Rides, events going on in Oxford
+for the day, the rowing information for each river and the term date of the
+University.
+
+Events
+------
+
+We've also added an entirely new "Events" app which lists all the events
+happening today and later in the week on a single view.
+
+All the events are being sourced from `Oxford Talks <http://talks.ox.ac.uk>`__
+the primary source for what's going on at the University.
 
 Personalisation
 ---------------
 
 The design of the Today view affords us a lot of flexibility in what we show
-you. So whilst you're using Mobile Oxford and favourite your, train station,
-park & ride, bus stops, we'll show the real-time information for each on the
-Today view. Along with this we allow you to give your own name to each, so
-rather than "C3 Magdalen Street" you can have something more relevant to you
-for example: "Bus home, outside Tesco".
+you. So whilst you're using Mobile Oxford and favourite train stations, park &
+ride, bus stops etc we'll show the real-time information for each on the Today
+view. Along with this we allow you to give your own name to each, so rather
+than "C3 Magdalen Street" you can have something more relevant to you for
+example: "Bus home, outside Tesco".
 
 We have a lot planned in the way of personalisation, currently we've only
 scratched the surface of what's possible. We hope to allow users to fully
@@ -47,7 +67,7 @@ Try it out & provide Feedback
 -----------------------------
 
 Our "in development" version is available at
-`new.m.ox.ac.uk<http://new.m.ox.ac.uk>`__. There are several bugs we're aware
+`new.m.ox.ac.uk <http://new.m.ox.ac.uk>`__. There are several bugs we're aware
 of and even more which we are not. Given that caveat, anyone is welcome to
 start using the new Mobile Oxford as they please.
 
