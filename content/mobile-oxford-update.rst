@@ -6,6 +6,7 @@ Mobile Oxford update
 :category: Mobile Oxford
 :slug: mobile-oxford-update
 :author: Dave King
+:email: david.king@it.ox.ac.uk
 :summary: Recent developments from the Mobile Oxford project the today view,
           events and personalisation.
 
