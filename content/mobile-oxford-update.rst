@@ -17,21 +17,40 @@ share a preview of some of the new features before we launch.
 The Today view
 --------------
 
+.. image:: |filename|/images/today-view.png
+   :class: right
+
 This new view to Mobile Oxford hopes to bring together all the information
 relevant to you, based upon your current context. For example, if you're
 outside the train station we want to show you the live departure board. If
 you've favourited your bus stops to and from work we'll show the real time
-departure information for them front and centre. We hope this becomes a
-one-stop shop for lots of existing Mobile Oxford users, particularly if you're
-a commuter.
+departure information for them front and centre. 
 
-.. image:: |filename|/images/today-view.png
-   :class: right
+We hope this becomes a one-stop shop for lots of existing Mobile Oxford users,
+particularly if you're a commuter.
 
 Other information we're showing on the Today view currently includes: the
 amount of free spaces at each of the Park & Rides, events going on in Oxford
 for the day, the rowing information for each river and the term date of the
 University.
+
+Personalisation
+---------------
+
+.. image:: |filename|/images/edit-today-view.png
+   :class: right
+
+Obviously not everyone using Mobile Oxford is a student, uses the Park & Ride,
+and is a keen rower. We know some of this information might be irrelevant for
+you and now you can personalise the home screen to your convenience. Clicking
+the settings button will allow you add/remove cards from the Today view.
+
+Beyond this, whilst you're using Mobile Oxford and favourite train stations,
+park & ride, bus stops etc we'll show the real-time information for each on the
+Today view. We're also allowing you to give your own name to each, so
+rather than "C3 Magdalen Street" you can have something more relevant to you
+for example: "Bus home, outside Tesco". Click the edit button from the
+"Favourites" view to rename any of your favourites right there.
 
 Events
 ------
@@ -41,22 +60,6 @@ happening today and later in the week on a single view.
 
 All the events are being sourced from `Oxford Talks <http://talks.ox.ac.uk>`__
 the primary source for what's going on at the University.
-
-Personalisation
----------------
-
-The design of the Today view affords us a lot of flexibility in what we show
-you. So whilst you're using Mobile Oxford and favourite train stations, park &
-ride, bus stops etc we'll show the real-time information for each on the Today
-view. Along with this we allow you to give your own name to each, so rather
-than "C3 Magdalen Street" you can have something more relevant to you for
-example: "Bus home, outside Tesco".
-
-We have a lot planned in the way of personalisation, currently we've only
-scratched the surface of what's possible. We hope to allow users to fully
-tailor the today view to their own usage of Mobile Oxford. We're aware you
-aren't all keen rowers interested in the safety flag status of the Isis and
-Godstow :-)
 
 iOS and Android
 ---------------
