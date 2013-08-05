@@ -36,6 +36,8 @@ magazine or journal style column layout. However it works just fine for styling
 ``inline-block``'s. Radu's solution didn't quite give us the effect we were
 after but with a few changes we got something we're happy with.
 
+.. image:: |filename|/images/today-columns.png
+
 Our Solution
 ------------
 
@@ -49,8 +51,8 @@ However we use a different CSS declaration, we use ``column-width`` which
 specifies a width for the column and allows the browser to place as many
 columns as will fill the containing element.  Giving a ``min-width`` as a % to
 our ``inline-block``'s keeps the columns flexible and doesn't leave large
-amounts of whitespace between them.
+amounts of whitespace between them. Additionally if the device doesn't have
+support for CSS3 columns the layout will fallback to a single column view,
+which is generally OK for us as again, we're mostly dealing with phones.
 
-We're quite happy with this solution for now and are considering a fallback
-with masonry for browsers which don't support CSS3 columns. Let us know what
-you think.
+We're quite happy with this solution for now, let us know what you think.
