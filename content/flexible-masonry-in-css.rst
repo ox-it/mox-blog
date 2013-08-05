@@ -11,14 +11,14 @@ Flexible Masonry layout purely with CSS
 
 So we (perhaps) all know about `masonry <http://masonry.desandro.com/>`__ an
 immensely popular JavaScript library which allows us to style our pages into
-a grid style layout.
+a dynamic grid style layout.
 
-With the new Today view in Mobile Oxford we wanted a grid-layout and masonry
-was our first port of call. We weren't too happy with the idea of bundling
-another stack of JavaScript libraries into Mobile Oxford. Especially for users
-on a mobile connection this can be quite a large overhead, more so since it's
-likely these users wouldn't even benefit from the grid style layout due to
-screen resolution).
+With the new Today view in Mobile Oxford we wanted a dynamic grid-layout and
+masonry was our first port of call. We weren't too happy with the idea of
+bundling another stack of JavaScript libraries into Mobile Oxford. Especially
+for users on a mobile connection this can be quite a large overhead, more so
+since it's likely these users wouldn't even benefit from the grid style layout
+due to screen proportions).
 
 We tried a few masonry alternatives which have fewer dependencies but none of
 them really impressed us. Our requirements were slightly different than what
@@ -29,7 +29,7 @@ your tiles to fit that area.
 Finally we stumbled upon a blog post from `Radu Chelariu
 <https://twitter.com/sickdesigner/>`__ titled `"Masonry in CSS"
 <http://sickdesigner.com/masonry-css-getting-awesome-with-css3/>`__. Which
-describes a grid style layout making use of CSS3's columns. Now CSS3 columns
+describes a dynamic grid-layout making use of CSS3's columns. Now CSS3 columns
 aren't *that* widely supported, but we're targeting mobile where support is
 quite good. This functionality was intended for styling blocks of text into a
 magazine or journal style column layout. However it works just fine for styling
