@@ -11,14 +11,14 @@ Flexible Masonry layout purely with CSS
 
 So we (perhaps) all know about `masonry <http://masonry.desandro.com/>`__ an
 immensely popular JavaScript library which allows us to style our pages into
-a dynamic grid style layout.
+a dynamic grid-layout.
 
 With the new Today view in Mobile Oxford we wanted a dynamic grid-layout and
 masonry was our first port of call. We weren't too happy with the idea of
 bundling another stack of JavaScript libraries into Mobile Oxford. Especially
 for users on a mobile connection this can be quite a large overhead, more so
 since it's likely these users wouldn't even benefit from the grid style layout
-due to screen proportions).
+due to screen proportions.
 
 We tried a few masonry alternatives which have fewer dependencies but none of
 them really impressed us. Our requirements were slightly different than what
@@ -47,8 +47,9 @@ See the `pertinent code in this jsFiddle <http://jsfiddle.net/J3UFY/6/>`__
 See it live on `Mobile Oxford <http://new.m.ox.ac.uk>`__.
 
 Similar to the method shown by Radu's blog post we are also using CSS3 columns.
-However we use a different CSS declaration, we use ``column-width`` which
-specifies a width for the column and allows the browser to place as many
+We're using a slightly different CSS declaration, rather than ``column-count``
+(which specifies how many columns to render) we use ``column-width`` which
+specifies a width for the columns and allows the browser to place as many
 columns as will fill the containing element.  Giving a ``min-width`` as a % to
 our ``inline-block``'s keeps the columns flexible and doesn't leave large
 amounts of whitespace between them. Additionally if the device doesn't have
