@@ -82,6 +82,11 @@ a {
 img {
   margin: 1em;
 }
+img.bordered {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+}
 
 // Navigation
 //
