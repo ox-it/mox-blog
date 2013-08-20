@@ -12,7 +12,9 @@ Explore Oxford University Museums App Launches!
 We're delighted to launch a new app for the `University Museums
 <http://www.museums.ox.ac.uk/explore-museums-app/>`__ out now for Android and
 iOS. The app includes featured objects, upcoming events and information for
-four of Oxford University's museums including the Pitt Rivers, Natural History, Museum of the History of Science and the Ashmolean. Download it today and plan your next visit to these fascinating and beautiful museums!
+four of Oxford University's museums including the Pitt Rivers, Natural History,
+Museum of the History of Science and the Ashmolean. Download it today and plan
+your next visit to these fascinating and beautiful museums!
 
 .. image:: |filename|/images/uma-app.png
    :class: bordered
