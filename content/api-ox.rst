@@ -53,7 +53,7 @@ For example, our API provides Points of Interest (POI) around Oxford, some of th
 a client can follow the link ``rti`` to discover an associated resource. Alternatively, you can get the parent POI
 by following the link ``parent``.
 
-[gist:id=5406037]
+`Example code <https://gist.github.com/martinfilliau/5406037>`__
 
 Our code is open-sourced on GitHub as "`Moxie <https://github.com/ox-it/moxie>`_", this is a work in progress and we
 will publish more technical details in a different blog post soon.
