@@ -10,15 +10,26 @@ Context Aware Features
           react to the context in which they run.
 
 Since we target the Web as well as Android and (soon) iOS with Mobile Oxford we
-want to make the best use of native functionality where it's available. However
-we don't want to make Web users second class citizens. Recently we've been
-making use of some native features (through Phonegap) and thought it was worth
-writing a blog post about how we're gracefully adjusting the features depending
-on the user context.
+want to make the best use of native functionality where it's available. Of
+course we don't want to make Web users second class citizens. Recently we've
+been making use of some native features (through Phonegap) and thought it was
+worth writing a blog post about how we're gracefully adjusting the features
+depending on the user context.
 
 Firstly we've been improving the contact search function. This allows users to
 search the LDAP of the University to find phone or email contact information
 for members of staff. Once the user has found the contact they are searching
-for they can send an email or phone that individual. Obviously on the web we
-have mailto and tel URL schemes for this which works across most platforms.
+for they can send an email or phone that individual. This is done by directing
+the user to URLs with have mailto and tel schemes respectively. Really we want
+users to be able to save these contacts directly to their phonebook without
+having to copy and paste numbers, emails and names.
+
+Natively this is straightforward, through the phonegap API's we can update the
+user's phonebook on their behalf. However many users aren't using the native
+applications, on the web how would this feature look? We thought it would be
+analagous to download a vCard for that contact. Now if the user has an
+application installed which can process vCards like Outlook, OSX Address Book
+they can add the vCard as a contact. In terms of implementation this meant a
+bit of work as we needed to build the vCards on client and download using HTML5
+features.
 
