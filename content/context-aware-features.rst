@@ -48,6 +48,9 @@ using HTML5 features.
 University Events
 -----------------
 
+.. image:: |filename|/images/add-event-calendar.png
+   :class: right bordered
+
 Within Mobile Oxford we `list many events <http://new.m.ox.ac.uk/#events/>`__
 happening today and later in the week. We'd like for users to be able to simply
 add an event to their calendar. Implementation for the native functionality is
