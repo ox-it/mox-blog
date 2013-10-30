@@ -40,7 +40,7 @@ we can update the user's phonebook on their behalf. However many users aren't
 using the native applications, on the web how would this feature look? We
 thought it would be analagous to download a `vCard
 <http://tools.ietf.org/html/rfc6350>`__ for that contact. Now if the user has
-an application installed which can process vCards such as Outlook, OSX Address
+an application installed which can process vCards such as Outlook, OS X Address
 Book, they can add the vCard as a contact. In terms of implementation this
 meant a bit of work as we needed to build the vCards on client and download
 using HTML5 features.
