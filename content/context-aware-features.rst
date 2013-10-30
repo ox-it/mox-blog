@@ -43,7 +43,7 @@ thought it would be analogous to download a `vCard
 an application installed which can process vCards such as Outlook, OS X Address
 Book, they can add the vCard as a contact. Our implementation builds the vCards
 on the client as we don't have an API endpoint for individual contacts. Then we
-provide download links to the vCards using the `Data URI scheme
+provide download links to the vCards using the `data URI scheme
 <http://en.wikipedia.org/wiki/Data_URI_scheme>`__.
 
 University Events
