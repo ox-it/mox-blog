@@ -13,7 +13,7 @@ Now we are packaging `Mobile Oxford <http://new.m.ox.ac.uk>`__ for iOS (coming
 soon!) and `Android
 <https://play.google.com/store/apps/details?id=uk.ac.ox.it.mobileoxford>`__ we
 want to provide the best experience to all platforms. Sometimes this is a piece
-of native functionality which can't be expressed through web API's so we have
+of native functionality which can't be expressed through web APIs so we have
 find ourselves having to adjust the feature slightly to keep feature parity
 regardless of the user's context. This can consist of many things, platform,
 device capabilities, form factor, are they a student or staff? Do they live
