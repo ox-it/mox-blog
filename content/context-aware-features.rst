@@ -30,9 +30,9 @@ Contact Search
 search the LDAP of the University to find phone or email contact information
 for members of staff. Once the user has found the contact they are searching
 for they can send an email or phone that individual.  This is done by directing
-the user to URLs with have mailto and tel schemes respectively. Really we want
-users to be able to save these contacts directly to their phonebook without
-having to copy and paste numbers, emails and names.
+the user to URLs with have ``mailto:`` and ``tel:`` schemes respectively.
+Really we want users to be able to save these contacts directly to their
+phonebook without having to copy and paste numbers, emails and names.
 
 Natively this is straightforward, through the `Cordova APIs
 <http://cordova.apache.org/docs/en/3.1.0/cordova_contacts_contacts.md.html#Contacts>`__
