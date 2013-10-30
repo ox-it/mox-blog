@@ -38,7 +38,7 @@ Natively this is straightforward, through the `Cordova APIs
 <http://cordova.apache.org/docs/en/3.1.0/cordova_contacts_contacts.md.html#Contacts>`__
 we can update the user's phonebook on their behalf. However many users aren't
 using the native applications, on the web how would this feature look? We
-thought it would be analagous to download a `vCard
+thought it would be analogous to download a `vCard
 <http://tools.ietf.org/html/rfc6350>`__ for that contact. Now if the user has
 an application installed which can process vCards such as Outlook, OS X Address
 Book, they can add the vCard as a contact. In terms of implementation this
@@ -50,8 +50,8 @@ University Events
 
 Within Mobile Oxford we `list many events <http://new.m.ox.ac.uk/#events/>`__
 happening today and later in the week. We'd like for users to be able to simply
-add an event to their calendar. Implementtion for the native functionality is a
-straightforward couple of API calls and a callback with Phonegap.
+add an event to their calendar. Implementation for the native functionality is
+a straightforward couple of API calls and a callback with Phonegap.
 
 For web users we thought the obvious solution here was to allow users to
 download an `iCalendar file <http://tools.ietf.org/html/rfc5545>`__ for each
