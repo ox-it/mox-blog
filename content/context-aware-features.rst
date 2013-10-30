@@ -1,7 +1,7 @@
 Context Aware Features
 ======================
 
-:date: 2013-10-28 15:50
+:date: 2013-10-30 16:40
 :category: Mobile Oxford
 :slug: context-aware-features
 :author: Dave King
