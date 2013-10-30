@@ -41,12 +41,10 @@ using the native applications, on the web how would this feature look? We
 thought it would be analogous to download a `vCard
 <http://tools.ietf.org/html/rfc6350>`__ for that contact. Now if the user has
 an application installed which can process vCards such as Outlook, OS X Address
-Book, they can add the vCard as a contact. In terms of implementation this
-meant a bit of work as we needed to build the vCards on client and provide
-download links using the `Data URI scheme
-<http://en.wikipedia.org/wiki/Data_URI_scheme>`__ and `download anchor
-attribute
-<http://updates.html5rocks.com/2011/08/Downloading-resources-in-HTML5-a-download>`__.
+Book, they can add the vCard as a contact. Our implementation builds the vCards
+on the client as we don't have an API endpoint for individual contacts. Then we
+provide download links to the vCards using the `Data URI scheme
+<http://en.wikipedia.org/wiki/Data_URI_scheme>`__.
 
 University Events
 -----------------
