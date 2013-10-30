@@ -15,9 +15,9 @@ soon!) and `Android
 want to provide the best experience to all platforms. Sometimes this is a piece
 of native functionality which can't be expressed through web APIs so we have
 find ourselves having to adjust the feature slightly to keep feature parity
-regardless of the user's context. This can consist of many things, platform,
-device capabilities, form factor, are they a student or staff? Do they live
-within the Oxford ring-road or further afield? All these factors are
+regardless of the user's context. This can consist of many things: platform,
+device capabilities, form factor, are they a student or staff, do they live
+within the Oxford ring-road or further afield. All these factors are
 interesting to us for our application.
 
 For the purposes of these features the only factor currently impacting
